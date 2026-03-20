@@ -83,18 +83,16 @@ a {
   margin-bottom: 30px;
 }
 
-.back-btn{
-  margin-block: 30px;
-  padding: 15px 30px;
-  background-color: white;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
-  border: none;
-
-}
-
-
 @media(max-width: 950px){
     .countries-container{
       justify-content: space-around;
+    }
+
+    .title{
+      font-size: 16px;
+    }
+
+    .header-container p{
+      font-size: 12px;
     }
 }

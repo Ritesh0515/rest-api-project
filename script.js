@@ -6,10 +6,10 @@ fetch(
   .then((res) => res.json())
   .then((data) => {
     data.forEach((country) => {
-      console.log(country);
+      // console.log(country);
       const countryCard = document.createElement('a')
       countryCard.classList.add('country-card')
-      countryCard.href = `/country.html?name=${country.name.common}`
+      countryCard.href = `./country.html?name=${country.name.common}`
 
       countryCard.innerHTML = `
             <img src=${country.flags.svg} alt=${country.flags.alt}>

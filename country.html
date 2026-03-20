@@ -1,28 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Country</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800,"
+      rel="stylesheet"
+    />
     <script src="country.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header-container">
-        <div class="header-content">
-            <h2 class="title">Where in the world?</h2>
-            <p><i class="fa-regular fa-moon">&nbsp;&nbsp;</i>Dark Mode</p>
-        </div>
+      <div class="header-content">
+        <h2 class="title">Where in the world?</h2>
+        <p><i class="fa-regular fa-moon">&nbsp;&nbsp;</i>Dark Mode</p>
+      </div>
     </header>
-    <button class="back-btn"><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp;Back</button>
-    <div class="body-content">
+    <main>
+      <a href="#" class="back-btn"
+        ><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp; Back</a
+      >
 
-    </div>
-</body>
+      <div class="country-details">
+        <img src="" alt="" />
 
+        <div class="text-details-container">
+          <h1></h1>
+          <div class="text-details">
+            <p><b>Native Name: </b><span class="native-name"></span></p>
+            <p><b>Population: </b><span class="population"></span></p>
+            <p><b>Region: </b><span class="region"></span></p>
+            <p><b>Sub Region: </b> <span class="sub-region"></span></p>
+            <p><b>Capital: </b><span class="capital"></span></p>
+            <p><b>Top Level Domain: </b> <span class="top-level-domain"></span></p>
+            <p><b>Currencies : </b> <span class="currencies"></span></p>
+            <p><b>Languages: </b><span class="languages"></span></p>
+          </div>
+
+          <div class="border-countries">
+            <p>
+              <b>Border Countries: </b>&nbsp; <a href="#">France</a>
+              <a href="#">Germany</a> <a href="#">Netherlands</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
