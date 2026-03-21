@@ -1,7 +1,15 @@
 .back-btn {
   box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 32px;
   padding: 8px 24px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.country-details-container{
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .text-details-container h1 {
@@ -29,20 +37,19 @@
 }
 
 .border-countries {
-  margin-top: 32px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 40px;
 }
 
 .border-countries a {
   box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
   padding: 4px 16px;
   border-radius: 8px;
-  margin-inline: 4px;
   font-size: 14px;
 }
-
-/* .text-details p{
-
-} */
 
 @media (max-width: 950px) {
   .country-details {
@@ -57,9 +64,5 @@
 
   .text-details {
     max-height: unset;
-  }
-
-  .text-details p {
-    margin:;
   }
 }

@@ -26,7 +26,7 @@ body {
 }
 
 main {
-  padding: 24px;
+  padding: 24px ;
 }
 
 a {
@@ -83,16 +83,74 @@ a {
   margin-bottom: 30px;
 }
 
-@media(max-width: 950px){
-    .countries-container{
-      justify-content: space-around;
-    }
-
-    .title{
-      font-size: 16px;
-    }
-
-    .header-container p{
-      font-size: 12px;
-    }
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  max-width: 1280px;
+  margin: 48px auto 32px auto;
+  padding-inline: 24px;
 }
+
+.search-container {
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15);
+  max-width: 350px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+.search-container i {
+  color: hsl(0, 0%, 50%);
+}
+
+.search-container input::placeholder {
+  color: hsl(0, 0%, 50%);
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 16px;
+}
+
+.region-filter{
+  width: 200px;
+  padding: 16px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+}
+
+
+
+@media (max-width: 950px) {
+  .countries-container {
+    justify-content: space-around;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .header-container p {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .search-filter-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .countries-container {
+    justify-content: center;
+  }
+}
+
